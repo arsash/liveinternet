@@ -1,0 +1,17 @@
+@media screen and (max-width: 768px){
+    .sites__list {
+        flex-direction: column;
+    }
+
+    .site-links {
+        width: 100%;
+    }
+
+    .header__left {
+        width: 50%;
+    }
+
+    .footer__container {
+        width: 100%;
+    }
+}
