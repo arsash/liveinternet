@@ -1,3 +1,7 @@
+html {
+    font-size: 16px;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -388,4 +392,67 @@ body {
 
 .list__link {
     color: #333;
+}
+
+.hamburger {
+    width: 35px;
+    height: 35px;
+    position: fixed;
+    top: 40px;
+    right: 30px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 1500;
+    cursor: pointer;
+}
+
+.hamburger__nav {
+    width: 35px;
+    height: 5px;
+    border-radius: 3px;
+    background: #5aabe1;
+    cursor: pointer;
+}
+
+.hamburger__nav::before {
+    content: '';
+    width: 35px;
+    height: 5px;
+    border-radius: 3px;
+    background: #5aabe1;
+    cursor: pointer;
+    display: inline-block;
+    position: absolute;
+    top: -10px;
+    right: 0;
+}
+
+.hamburger__nav--active {
+    background: transparent;
+}
+
+.hamburger__nav--active::before {
+    top: 0;
+    transform: rotate(-45deg);
+    transition: 0.5s;
+}
+
+.hamburger__nav::after {
+    content: '';
+    width: 35px;
+    height: 5px;
+    border-radius: 3px;
+    background: #5aabe1;
+    cursor: pointer;
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    right: 0;
+}
+
+.hamburger__nav--active::after {
+    top: 0;
+    transform: rotate(45deg);
+    transition: 0.5s;
 }

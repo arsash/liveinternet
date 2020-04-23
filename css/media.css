@@ -1,6 +1,10 @@
-@media screen and (max-width: 768px){
+@media screen and (max-width: 992px){
     .sites__list {
         flex-direction: column;
+    }
+
+    .top__links-column {
+        width: 100%;
     }
 
     .site-links {
@@ -11,7 +15,61 @@
         width: 50%;
     }
 
+    .after__add-links {
+        flex-direction: column;
+    }
+
     .footer__container {
         width: 100%;
+    }
+
+    .top_news {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 650px) {
+
+    .hamburger {
+        display: flex;
+    }
+
+    .header {
+        width: 200px;
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        top: 40px;
+        right: 45px;
+        padding: 20px;
+        z-index: 1000;
+    }
+
+    .header-active {
+        display: flex;
+    }    
+
+    .header__links-left {
+        flex-direction: column;
+    }
+    
+    .header__links-right {
+        flex-direction: column;
+    }
+
+    .header__links-right .header__links_item:nth-child(2) {
+        display: none;
+    }
+
+    .header__links_item {
+        margin: 10px 0;
+    }
+
+    .search {
+        flex-direction: column;
+    }
+
+    .search__logo {
+        margin: 15px auto;
     }
 }
