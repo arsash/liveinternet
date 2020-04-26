@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.rating {
+    background: #eeeff0;
+    position: fixed;
+    position: absolute;
+    z-index: 100000;
+    width: 100%;
+    top: 0px;
+    padding: 20px 0;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+
+.rating__container {
+    width: 63%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rating__column {
+    width: 50%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.controls {
+    display: flex;
+    list-style: none;
+    margin-left: 15px;
+    position: relative;
+}
+
+.controls__item {
+    width: 65px;
+    margin: 0 5px;
+    cursor: pointer;
+    padding: 6px;
+    display: flex;
+    justify-content: center;
+    border-radius: 7px;
+}
+
+.controls__item:hover {
+    background-color: #dbddde;
+}
+
+.controls__item--link {
+    font-size: 14px;
+    text-decoration: none;
+    color: grey;
+}
+
+.link-active {
+    border: 2px solid #2c97de;
+}
+
+.controls__item.link-active a {
+    color: #2c97de;
+    font-weight: bold;
+}
+
+.country {
+    width: 105px;
+    color: #333333;
+    border-radius: 0;
+}
+
+.all-regions {
+    width: 105px;
+    color: #333333;
+    border-radius: 0;
+}
+
+.category {
+    width: 105px;
+    color: #333333;
+    border-radius: 0;
+}
+
+.country__dropdown {
+    position: absolute;
+    top: 33px;
+    right: 259px;
+    display: none;
+    width: 217px;
+    flex-wrap: wrap;
+    align-items: baseline;
+    background: #dbddde;
+    padding: 15px;
+}
+
+.all-regions__dropdown {
+    position: absolute;
+    top: 33px;
+    right: 132px;
+    display: none;
+    width: 217px;
+    flex-wrap: wrap;
+    align-items: baseline;
+    background: #dbddde;
+    padding: 15px;
+}
+
+.category__dropdown {
+    position: absolute;
+    top: 33px;
+    right: 5px;
+    display: none;
+    width: 217px;
+    flex-wrap: wrap;
+    align-items: baseline;
+    background: #dbddde;
+    padding: 15px;
+}
+
+.regions__link {
+    font-size: 12px;
+    color: black;
+    margin: 0 3px;
+}
+
+.regions__link:hover {
+    text-decoration: none;
+}
+
+.big {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.medium {
+    font-size: 16px;
+}
+
+.small {
+    font-size: 14px;
+}
+
+.mini {
+    font-size: 10px;
+}
